@@ -7,7 +7,6 @@ Metal Expansion is a NeoForge mod for Minecraft that adds new metals, tools, mac
 - Osmium items and tools
 - Lead-acid battery with FE-style energy storage
 - Hydroelectric generator
-- Basic GUI for generator status and charging
 
 ## Requirements
 
