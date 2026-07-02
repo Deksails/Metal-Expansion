@@ -174,7 +174,7 @@ public class HydroGeneratorBlockEntity extends BlockEntity implements MenuProvid
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("container.metal_expansion.hydro_generator");
+        return Component.translatable("block.metal_expansion.hydro_generator");
     }
 
     @Nullable
