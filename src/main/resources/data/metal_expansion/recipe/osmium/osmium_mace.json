@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "metal_expansion:osmium_block",
+  "base": "minecraft:mace",
+  "result": {
+    "id": "metal_expansion:osmium_mace"
+  },
+  "template": "metal_expansion:osmium_upgrade_smithing_template"
+}

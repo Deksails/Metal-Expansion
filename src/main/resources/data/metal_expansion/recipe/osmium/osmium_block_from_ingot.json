@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "metal_expansion:osmium_ingot",
+    "metal_expansion:osmium_ingot",
+    "metal_expansion:osmium_ingot",
+    "metal_expansion:osmium_ingot",
+    "metal_expansion:osmium_ingot",
+    "metal_expansion:osmium_ingot",
+    "metal_expansion:osmium_ingot",
+    "metal_expansion:osmium_ingot",
+    "metal_expansion:osmium_ingot"
+  ],
+  "result": {
+    "id": "metal_expansion:osmium_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": "metal_expansion:raw_osmium",
+  "result": {
+    "id": "metal_expansion:osmium_shard",
+    "count": 1
+  },
+  "experience": 1,
+  "cookingtime": 200
+}

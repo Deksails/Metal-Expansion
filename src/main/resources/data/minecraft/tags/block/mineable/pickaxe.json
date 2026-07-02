@@ -1,0 +1,10 @@
+{
+  "values": [
+    "metal_expansion:osmium_ore",
+    "metal_expansion:osmium_block",
+    "metal_expansion:deepslate_osmium_ore",
+    "metal_expansion:hydro_generator",
+    "metal_expansion:hydro_generator_plus",
+    "metal_expansion:hydro_generator_max"
+  ]
+}

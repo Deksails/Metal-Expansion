@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "metal_expansion:block/machines/hydro_generator_plus"
+    },
+    "facing=east": {
+      "model": "metal_expansion:block/machines/hydro_generator_plus",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "metal_expansion:block/machines/hydro_generator_plus",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "metal_expansion:block/machines/hydro_generator_plus",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "metal_expansion:block/machines/hydro_generator_plus",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "metal_expansion:block/machines/hydro_generator_plus",
+      "x": 90
+    }
+  }
+}

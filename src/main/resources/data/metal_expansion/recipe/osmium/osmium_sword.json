@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "metal_expansion:osmium_ingot",
+  "base": "minecraft:iron_sword",
+  "result": {
+    "id": "metal_expansion:osmium_sword"
+  },
+  "template": "metal_expansion:osmium_upgrade_smithing_template"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "metal_expansion:osmium_ingot",
+  "base": "minecraft:iron_hoe",
+  "result": {
+    "id": "metal_expansion:osmium_hoe"
+  },
+  "template": "metal_expansion:osmium_upgrade_smithing_template"
+}

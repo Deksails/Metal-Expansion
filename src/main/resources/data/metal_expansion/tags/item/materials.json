@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "metal_expansion:osmium_ingot",
+    "metal_expansion:raw_osmium",
+    "metal_expansion:osmium_shard",
+    "metal_expansion:osmium_nugget",
+    "metal_expansion:osmium_upgrade_smithing_template",
+    "metal_expansion:osmium_ore",
+    "metal_expansion:deepslate_osmium_ore"
+  ]
+}

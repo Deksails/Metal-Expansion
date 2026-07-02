@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "metal_expansion:block/machines/hydro_generator_plus"
+  }
+}

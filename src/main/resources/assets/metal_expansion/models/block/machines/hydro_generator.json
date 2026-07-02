@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "metal_expansion:block/machine/hydro_generator/hydro_generator_front",
+    "up": "metal_expansion:block/machine/hydro_generator/hydro_generator_top",
+    "down": "metal_expansion:block/machine/hydro_generator/hydro_generator_bottom",
+    "north": "metal_expansion:block/machine/hydro_generator/hydro_generator_front",
+    "south": "metal_expansion:block/machine/hydro_generator/hydro_generator_back",
+    "west": "metal_expansion:block/machine/hydro_generator/hydro_generator_left",
+    "east": "metal_expansion:block/machine/hydro_generator/hydro_generator_right"
+  }
+}

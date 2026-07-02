@@ -1,0 +1,31 @@
+{
+  "itemGroup.metal_expansion": "Metal Expansion",
+  "itemGroup.metal_expansion_main": "Metal Expansion",
+  "itemGroup.metal_expansion_tools": "Metal Expansion Tools",
+  "itemGroup.metal_expansion_miscellaneous": "Metal Expansion Miscellaneous",
+
+  "item.metal_expansion.osmium_ingot": "Osmium Ingot",
+  "item.metal_expansion.raw_osmium": "Raw Osmium",
+  "item.metal_expansion.osmium_shard": "Osmium Shard",
+  "item.metal_expansion.osmium_upgrade_smithing_template": "Osmium Upgrade Smithing Template",
+  "item.metal_expansion.sulfur_powder": "Sulfur Powder",
+  "item.metal_expansion.lead_acid_battery": "Lead-acid Battery",
+
+  "block.metal_expansion.osmium_ore": "Osmium Ore",
+  "block.metal_expansion.osmium_block": "Block of Osmium",
+  "block.metal_expansion.deepslate_osmium_ore": "Deepslate Osmium Ore",
+  "block.metal_expansion.hydro_generator": "Hydroelectric Generator",
+  "container.metal_expansion.hydro_generator": "Hydroelectric Generator",
+  "block.metal_expansion.hydro_generator_plus": "Advanced Hydroelectric Generator",
+  "block.metal_expansion.hydro_generator_max": "Elite Hydroelectric Generator",
+
+  "item.metal_expansion.osmium_axe": "Osmium Axe",
+  "item.metal_expansion.osmium_pickaxe": "Osmium Pickaxe",
+  "item.metal_expansion.osmium_shovel": "Osmium Shovel",
+  "item.metal_expansion.osmium_hoe": "Osmium Hoe",
+  "item.metal_expansion.osmium_sword": "Osmium Sword",
+  "item.metal_expansion.osmium_spear": "Osmium Spear",
+  "item.metal_expansion.osmium_mace": "Osmium Mace",
+  "item.metal_expansion.osmium_fishing_rod": "Osmium Fishing Rod",
+  "item.metal_expansion.osmium_nugget": "Osmium Nugget"
+}

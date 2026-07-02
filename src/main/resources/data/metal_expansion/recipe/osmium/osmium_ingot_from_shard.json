@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "metal_expansion:osmium_shard",
+    "metal_expansion:osmium_shard",
+    "metal_expansion:osmium_shard"
+  ],
+  "result": {
+    "id": "metal_expansion:osmium_ingot",
+    "count": 1
+  }
+}

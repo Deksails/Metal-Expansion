@@ -1,0 +1,33 @@
+{
+  "itemGroup.metal_expansion": "金属拓展",
+  "itemGroup.metal_expansion_main": "金属拓展",
+  "itemGroup.metal_expansion_tools": "金属拓展工具",
+  "itemGroup.metal_expansion_miscellaneous": "金属拓展杂项",
+
+  "item.metal_expansion.osmium_ingot": "锇锭",
+  "item.metal_expansion.osmium_shard": "锇碎片",
+  "item.metal_expansion.raw_osmium":"粗锇",
+  "item.metal_expansion.osmium_upgrade_smithing_template": "锇升级锻造模板",
+  "item.metal_expansion.sulfur_powder": "硫粉",
+
+  "item.metal_expansion.lead_acid_battery": "铅酸蓄电池",
+
+  "block.metal_expansion.osmium_ore": "锇矿石",
+  "block.metal_expansion.deepslate_osmium_ore": "深层锇矿石",
+  "block.metal_expansion.osmium_block": "锇块",
+
+  "block.metal_expansion.hydro_generator": "水力发电机",
+  "container.metal_expansion.hydro_generator": "水力发电机",
+  "block.metal_expansion.hydro_generator_plus": "中级水力发电机",
+  "block.metal_expansion.hydro_generator_max": "特级水力发电机",
+
+  "item.metal_expansion.osmium_axe": "锇斧",
+  "item.metal_expansion.osmium_pickaxe": "锇镐",
+  "item.metal_expansion.osmium_shovel": "锇铲铲",
+  "item.metal_expansion.osmium_hoe": "锇锄",
+  "item.metal_expansion.osmium_sword": "锇剑",
+  "item.metal_expansion.osmium_spear": "锇矛",
+  "item.metal_expansion.osmium_mace": "锇制重锤",
+  "item.metal_expansion.osmium_fishing_rod": "锇制钓竿",
+  "item.metal_expansion.osmium_nugget": "锇粒"
+}
