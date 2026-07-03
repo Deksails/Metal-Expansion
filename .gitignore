@@ -17,3 +17,6 @@ settings.gradle
 gradle.properties
 README.md
 LICENSE
+CreateJar.bat
+PLAN/
+.gitignore

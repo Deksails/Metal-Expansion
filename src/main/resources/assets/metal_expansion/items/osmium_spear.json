@@ -5,7 +5,7 @@
       {
         "model": {
           "type": "minecraft:model",
-          "model": "metal_expansion:item/tool/osmium_spear"
+          "model": "metal_expansion:item/tools/osmium/osmium_spear"
         },
         "when": [
           "gui",
@@ -17,7 +17,7 @@
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "metal_expansion:item/tool/osmium_spear_in_hand"
+      "model": "metal_expansion:item/tools/osmium/osmium_spear_in_hand"
     },
     "property": "minecraft:display_context"
   },

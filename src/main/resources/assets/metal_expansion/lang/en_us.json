@@ -4,19 +4,25 @@
   "itemGroup.metal_expansion_tools": "Metal Expansion Tools",
   "itemGroup.metal_expansion_miscellaneous": "Metal Expansion Miscellaneous",
 
-  "item.metal_expansion.osmium_ingot": "Osmium Ingot",
-  "item.metal_expansion.raw_osmium": "Raw Osmium",
-  "item.metal_expansion.osmium_shard": "Osmium Shard",
-  "item.metal_expansion.osmium_upgrade_smithing_template": "Osmium Upgrade Smithing Template",
   "item.metal_expansion.sulfur_powder": "Sulfur Powder",
+  "item.metal_expansion.osmium_ingot": "Osmium Ingot",
+  "item.metal_expansion.osmium_shard": "Osmium Shard",
+  "item.metal_expansion.raw_osmium": "Raw Osmium",
+  "item.metal_expansion.osmium_nugget": "Osmium Nugget",
+  "item.metal_expansion.osmium_upgrade_smithing_template": "Osmium Upgrade Smithing Template",
+  "item.metal_expansion.silver_ingot": "Silver Ingot",
+  "item.metal_expansion.silver_shard": "Silver Shard",
+  "item.metal_expansion.raw_silver": "Raw Silver",
+  "item.metal_expansion.silver_nugget": "Silver Nugget",
+
   "item.metal_expansion.lead_acid_battery": "Lead-acid Battery",
 
   "block.metal_expansion.osmium_ore": "Osmium Ore",
-  "block.metal_expansion.osmium_block": "Block of Osmium",
   "block.metal_expansion.deepslate_osmium_ore": "Deepslate Osmium Ore",
-  "block.metal_expansion.hydro_generator": "Hydroelectric Generator",
-  "block.metal_expansion.hydro_generator_plus": "Advanced Hydroelectric Generator",
-  "block.metal_expansion.hydro_generator_max": "Elite Hydroelectric Generator",
+  "block.metal_expansion.osmium_block": "Block of Osmium",
+  "block.metal_expansion.silver_ore": "Silver Ore",
+  "block.metal_expansion.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.metal_expansion.silver_block": "Block of Silver",
 
   "item.metal_expansion.osmium_axe": "Osmium Axe",
   "item.metal_expansion.osmium_pickaxe": "Osmium Pickaxe",
@@ -26,5 +32,14 @@
   "item.metal_expansion.osmium_spear": "Osmium Spear",
   "item.metal_expansion.osmium_mace": "Osmium Mace",
   "item.metal_expansion.osmium_fishing_rod": "Osmium Fishing Rod",
-  "item.metal_expansion.osmium_nugget": "Osmium Nugget"
+  "item.metal_expansion.silver_axe": "Silver Axe",
+  "item.metal_expansion.silver_pickaxe": "Silver Pickaxe",
+  "item.metal_expansion.silver_shovel": "Silver Shovel",
+  "item.metal_expansion.silver_hoe": "Silver Hoe",
+  "item.metal_expansion.silver_sword": "Silver Sword",
+  "item.metal_expansion.silver_spear": "Silver Spear",
+
+  "block.metal_expansion.hydro_generator": "Hydroelectric Generator",
+  "block.metal_expansion.hydro_generator_plus": "Advanced Hydroelectric Generator",
+  "block.metal_expansion.hydro_generator_max": "Elite Hydroelectric Generator"
 }

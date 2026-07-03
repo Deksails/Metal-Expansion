@@ -1,8 +1,9 @@
 package com.metal_expansion.tags.registry;
 
 import com.metal_expansion.MetalExpansion;
-import com.metal_expansion.tags.item.LeadAcidBatteryItem;
+import com.metal_expansion.tags.item.batteryitem.LeadAcidBatteryItem;
 import com.metal_expansion.tags.item.ModToolMaterials;
+import com.metal_expansion.tags.item.batteryitem.LeadAcidBatteryUnitItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -50,6 +51,9 @@ public class ModItems {
     public static final DeferredItem<Item> LEAD_ACID_BATTERY =
             ITEMS.registerItem("lead_acid_battery",
                     props -> new LeadAcidBatteryItem(props.stacksTo(1)));
+    public static final DeferredItem<Item> LEAD_ACID_BATTERY_UNIT =
+            ITEMS.registerItem("lead_acid_battery_unit",
+                    props -> new LeadAcidBatteryUnitItem(props.stacksTo(1)));
 
     //Machines_Items
 
@@ -69,6 +73,7 @@ public class ModItems {
     public static final DeferredItem<BlockItem> DEEPSLATE_OSMIUM_ORE =
             ITEMS.registerSimpleBlockItem("deepslate_osmium_ore", ModBlocks.DEEPSLATE_OSMIUM_ORE);
 
+    //Osmium_Tools
     public static final DeferredItem<Item> OSMIUM_SPEAR = ITEMS.registerItem(
         "osmium_spear",
         props -> new Item(props
@@ -85,7 +90,7 @@ public class ModItems {
                 4.6f
 
         )
-                .durability(900)
+                .durability(800)
         )
     );
     public static final DeferredItem<Item> OSMIUM_MACE = ITEMS.registerItem(
@@ -98,13 +103,6 @@ public class ModItems {
             )
     );
 
-    public static final DeferredItem<Item> OSMIUM_FISHING_ROD = ITEMS.registerItem(
-            "osmium_fishing_rod",
-            props -> new FishingRodItem(
-                    props.durability(256).enchantable(1)
-            )
-    );
-
     public static final DeferredItem<Item> OSMIUM_SWORD = ITEMS.registerItem(
         "osmium_sword",
         props -> new Item(props.sword(
@@ -112,8 +110,15 @@ public class ModItems {
                 2.5f,
                 -2.4f
         )
-                .durability(900)
+                .durability(800)
         )
+    );
+
+    public static final DeferredItem<Item> OSMIUM_FISHING_ROD = ITEMS.registerItem(
+            "osmium_fishing_rod",
+            props -> new FishingRodItem(
+                    props.durability(350).enchantable(1)
+            )
     );
 
     public static final DeferredItem<Item> OSMIUM_PICKAXE = ITEMS.registerItem(
@@ -123,6 +128,7 @@ public class ModItems {
                     1.0f,
                     -2.8f
             )
+                    .durability(550)
             )
     );
 
@@ -144,7 +150,7 @@ public class ModItems {
                     1.0f,
                     -3.0f
             )
-                    .durability(900)
+                    .durability(600)
             )
     );
 
@@ -155,10 +161,8 @@ public class ModItems {
                     -3.0f,
                     -1.0f
             )
-                    .durability(700)
+                    .durability(550)
             )
     );
-
-//Osmium_Tools
 
 }

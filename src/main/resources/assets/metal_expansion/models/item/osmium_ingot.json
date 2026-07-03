@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "metal_expansion:item/osmium_ingot"
+    "layer0": "metal_expansion:item/tab_miscellaneous/osmium/osmium_ingot"
   }
 }

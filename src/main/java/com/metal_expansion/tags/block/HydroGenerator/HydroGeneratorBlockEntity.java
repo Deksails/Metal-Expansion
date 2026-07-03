@@ -1,6 +1,6 @@
 package com.metal_expansion.tags.block.HydroGenerator;
 
-import com.metal_expansion.tags.energy.Battery;
+import com.metal_expansion.tags.energy.LeadAcidBattery.LeadAcidBattery;
 import com.metal_expansion.tags.registry.ModBlockEntities;
 import com.mojang.serialization.Codec;
 import java.util.ArrayDeque;
@@ -62,10 +62,10 @@ public class HydroGeneratorBlockEntity extends BlockEntity implements MenuProvid
             return;
         }
 
-        int energy = Battery.get(entity.storedItem);
-        int toInsert = Math.min(Battery.MAX - energy, entity.cachedGeneratedPerTick);
+        int energy = LeadAcidBattery.get(entity.storedItem);
+        int toInsert = Math.min(LeadAcidBattery.MAX - energy, entity.cachedGeneratedPerTick);
         if (toInsert > 0) {
-            Battery.set(entity.storedItem, energy + toInsert);
+            LeadAcidBattery.set(entity.storedItem, energy + toInsert);
             entity.setChanged();
             level.sendBlockUpdated(pos, state, state, 3);
         }
@@ -270,10 +270,10 @@ public class HydroGeneratorBlockEntity extends BlockEntity implements MenuProvid
         }
     }
     public int getStoredItemEnergy() {
-        return this.storedItem.isEmpty() ? 0 : Battery.get(this.storedItem);
+        return this.storedItem.isEmpty() ? 0 : LeadAcidBattery.get(this.storedItem);
     }
 
     public int getStoredItemEnergyCapacity() {
-        return this.storedItem.isEmpty() ? 0 : Battery.MAX;
+        return this.storedItem.isEmpty() ? 0 : LeadAcidBattery.MAX;
     }
 }

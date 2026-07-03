@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "metal_expansion:item/tool/osmium_shovel"
+    "model": "metal_expansion:item/tools/osmium/osmium_shovel"
   }
 }

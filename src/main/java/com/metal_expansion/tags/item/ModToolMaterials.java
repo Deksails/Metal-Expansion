@@ -10,7 +10,16 @@ public class ModToolMaterials {
             650,
             7.0f,
             3f,
-            28,
+            35,
+            ModTags.Items.OSMIUM_INGOTS
+    );
+    public static final ToolMaterial SILVER = new ToolMaterial(
+            BlockTags.INCORRECT_FOR_STONE_TOOL,
+            151,
+            4.0f,
+            2f,
+            20,
             ModTags.Items.OSMIUM_INGOTS
     );
 }
+

@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "metal_expansion:item/lead_acid_battery"
+    "model": "metal_expansion:item/tab_main/lead_acid_battery"
   }
 }

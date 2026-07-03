@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "metal_expansion:block/osmium_block"
+    "model": "metal_expansion:block/metal_block/osmium_block"
   }
 }
