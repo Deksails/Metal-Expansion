@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "metal_expansion:deepslate_galena",
+  "step": "underground_ores"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": "metal_expansion:raw_silver",
+  "result": {
+    "id": "metal_expansion:silver_shard"
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "metal_expansion:item/tab_main/bottle/simple_anticorrosion_liquid_iron_bottle"
+  }
+}

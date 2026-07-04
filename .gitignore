@@ -1,22 +1,41 @@
+# Gradle
 .gradle/
 build/
 out/
+
+# Minecraft / NeoForge run directory
 run/
-.idea/
-*.iml
-*.log
 logs/
 crash-reports/
+*.log
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# OS files
 .DS_Store
-src/
-gradle/
-gradlew
-gradlew.bat
-build.gradle
-settings.gradle
-gradle.properties
-README.md
-LICENSE
-createjar.bat
+Thumbs.db
+
+# Local / private files
+local.properties
+.env
+.env.*
+
+# Personal planning files
 PLAN/
-.gitignore
+
+# Local build helper scripts
+CreateJar.bat
+createjar.bat
+createJar.bat
+
+# Built mod jars
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Temporary files
+*.tmp
+*.bak
+*.swp

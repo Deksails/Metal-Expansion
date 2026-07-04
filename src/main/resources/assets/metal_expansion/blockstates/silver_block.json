@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "metal_expansion:block/metal_block/silver_block"
+    }
+  }
+}

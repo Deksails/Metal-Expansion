@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "BAB",
+    "ACA",
+    "BAB"
+  ],
+  "key": {
+    "A": "minecraft:iron_ingot",
+    "B": "minecraft:glass",
+    "C": "metal_expansion:osmium_shard"
+  },
+  "result": {
+    "id": "metal_expansion:simple_anticorrosion_gas_iron_bottle",
+    "count": 1
+  }
+}

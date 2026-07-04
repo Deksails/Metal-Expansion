@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "metal_expansion:silver_block"
+  ],
+  "result": {
+    "id": "metal_expansion:silver_ingot",
+    "count": 9
+  }
+}

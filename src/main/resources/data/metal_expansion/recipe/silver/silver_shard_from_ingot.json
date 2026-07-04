@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "metal_expansion:silver_ingot"
+  ],
+  "result": {
+    "id": "metal_expansion:silver_shard",
+    "count": 3
+  }
+}

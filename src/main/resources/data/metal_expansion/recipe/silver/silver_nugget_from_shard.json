@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "metal_expansion:silver_shard"
+  ],
+  "result": {
+    "id": "metal_expansion:silver_nugget",
+    "count": 3
+  }
+}

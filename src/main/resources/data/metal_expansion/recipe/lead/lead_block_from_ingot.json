@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "metal_expansion:lead_ingot",
+    "metal_expansion:lead_ingot",
+    "metal_expansion:lead_ingot",
+    "metal_expansion:lead_ingot",
+    "metal_expansion:lead_ingot",
+    "metal_expansion:lead_ingot",
+    "metal_expansion:lead_ingot",
+    "metal_expansion:lead_ingot",
+    "metal_expansion:lead_ingot"
+  ],
+  "result": {
+    "id": "metal_expansion:lead_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "metal_expansion:item/tools/osmium/osmium_pickaxe"
+  }
+}

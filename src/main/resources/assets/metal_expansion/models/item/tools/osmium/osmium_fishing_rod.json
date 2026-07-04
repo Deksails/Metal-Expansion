@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "metal_expansion:item/tools/osmium/osmium_fishing_rod"
+  }
+}

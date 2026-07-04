@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "metal_expansion:block/ore/nether_silver_ore"
+    }
+  }
+}

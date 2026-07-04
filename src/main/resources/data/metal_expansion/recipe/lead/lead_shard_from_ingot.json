@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "metal_expansion:lead_ingot"
+  ],
+  "result": {
+    "id": "metal_expansion:lead_shard",
+    "count": 3
+  }
+}
