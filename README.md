@@ -1,10 +1,12 @@
 # Metal Expansion   金属拓展
 
-Metal Expansion is a NeoForge mod for Minecraft that adds new metals, tools, machines, batteries, and early energy mechanics.
+Metal Expansion is a NeoForge mod for Minecraft that adds new metals, tools, machines, batteries, early energy mechanics and so on.
 
 ## Current Features   当前特性
 
 - Osmium items and tools
+- Silver items and tools
+- Lead items
 - Lead-acid battery with FE-style energy storage
 - Hydroelectric generator
 
