@@ -3,6 +3,8 @@
   "values": [
     "metal_expansion:osmium_sword",
     "metal_expansion:osmium_spear",
-    "metal_expansion:osmium_mace"
+    "metal_expansion:osmium_mace",
+    "metal_expansion:silver_sword",
+    "metal_expansion:silver_spear"
   ]
 }

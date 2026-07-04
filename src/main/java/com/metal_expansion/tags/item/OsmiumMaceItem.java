@@ -106,16 +106,16 @@ public class OsmiumMaceItem extends Item {
             if (!canSmashAttack(attacker)) {
                 return 0.0F;
             } else {
-                double fallHeightThreshold1 = (double) 3.0F;
-                double fallHeightThreshold2 = (double) 8.0F;
+                double fallHeightThreshold1 = 3.0;
+                double fallHeightThreshold2 = 8.0;
                 double fallDistance = attacker.fallDistance;
                 double damage;
-                if (fallDistance <= (double) 3.0F) {
-                    damage = (double) 5.0F * fallDistance;
-                } else if (fallDistance <= (double) 8.0F) {
-                    damage = (double) 15.0F + (double) 2.5F * (fallDistance - (double) 3.0F);
+                if (fallDistance <= 3.0) {
+                    damage = 5.0 * fallDistance;
+                } else if (fallDistance <= 8.0) {
+                    damage = 15.0 + 2.F * (fallDistance - 3.0);
                 } else {
-                    damage = (double) 27.5F + (double) 1.75F * (fallDistance - (double) 8.0F);
+                    damage = 27.5 + 1.75 * (fallDistance - 8.0);
                 }
 
                 Level var14 = attacker.level();

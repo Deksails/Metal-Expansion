@@ -4,7 +4,10 @@ import com.metal_expansion.MetalExpansion;
 import com.metal_expansion.tags.block.HydroGenerator.HydroGeneratorBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -77,8 +80,8 @@ public class ModBlocks {
                     )
             );
     //Lead
-    public static final DeferredBlock<Block> LEAD_ORE =
-            BLOCKS.register("lead_ore", registryName ->
+    public static final DeferredBlock<Block> GALENA =
+            BLOCKS.register("galena", registryName ->
                     new Block(
                             BlockBehaviour.Properties.of()
                                     .setId(ResourceKey.create(Registries.BLOCK, registryName))
@@ -87,8 +90,8 @@ public class ModBlocks {
                                     .requiresCorrectToolForDrops()
                     )
             );
-    public static final DeferredBlock<Block> DEEPSLATE_LEAD_ORE =
-            BLOCKS.register("deepslate_lead_ore", registryName ->
+    public static final DeferredBlock<Block> DEEPSLATE_GALENA =
+            BLOCKS.register("deepslate_galena", registryName ->
                     new Block(
                             BlockBehaviour.Properties.of()
                                     .setId(ResourceKey.create(Registries.BLOCK, registryName))
@@ -97,6 +100,30 @@ public class ModBlocks {
                                     .requiresCorrectToolForDrops()
                     )
             );
+    public static final DeferredBlock<Block> END_LEAD_ORE =
+            BLOCKS.register("end_lead_ore", registryName ->
+                    new DropExperienceBlock(
+                            ConstantInt.of(1),
+                            BlockBehaviour.Properties.of()
+                                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
+                                    .mapColor(MapColor.SAND)
+                                    .strength(3.0f, 3.0f)
+                                    .requiresCorrectToolForDrops()
+                    )
+            );
+
+    public static final DeferredBlock<Block> NETHER_SILVER_ORE =
+            BLOCKS.register("nether_silver_ore", registryName ->
+                    new DropExperienceBlock(
+                            UniformInt.of(0, 1),
+                            BlockBehaviour.Properties.of()
+                                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
+                                    .mapColor(MapColor.NETHER)
+                                    .strength(3.0f, 3.0f)
+                                    .requiresCorrectToolForDrops()
+                    )
+            );
+
     public static final DeferredBlock<Block> LEAD_BLOCK =
             BLOCKS.register("lead_block", registryName ->
                     new Block(

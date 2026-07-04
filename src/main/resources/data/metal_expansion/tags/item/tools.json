@@ -5,6 +5,10 @@
     "metal_expansion:osmium_pickaxe",
     "metal_expansion:osmium_hoe",
     "metal_expansion:osmium_shovel",
-    "metal_expansion:osmium_fishing_rod"
+    "metal_expansion:osmium_fishing_rod",
+    "metal_expansion:silver_axe",
+    "metal_expansion:silver_pickaxe",
+    "metal_expansion:silver_hoe",
+    "metal_expansion:silver_shovel"
   ]
 }

@@ -5,6 +5,8 @@
   "itemGroup.metal_expansion_miscellaneous": "Metal Expansion Miscellaneous",
 
   "item.metal_expansion.sulfur_powder": "Sulfur Powder",
+  "item.metal_expansion.dirty_sulfur_powder": "Dirty Sulfur Powder",
+
   "item.metal_expansion.osmium_ingot": "Osmium Ingot",
   "item.metal_expansion.osmium_shard": "Osmium Shard",
   "item.metal_expansion.raw_osmium": "Raw Osmium",
@@ -16,28 +18,42 @@
   "item.metal_expansion.silver_nugget": "Silver Nugget",
 
   "item.metal_expansion.lead_acid_battery": "Lead-acid Battery",
+  "item.metal_expansion.lead_acid_battery_unit": "Lead-acid Battery Unit",
+
+  "item.metal_expansion.simple_anticorrosion_gas_iron_bottle": "Simple Anti-corrosion Gas Iron Bottle",
+  "item.metal_expansion.simple_anticorrosion_liquid_iron_bottle": "Simple Anti-corrosion Liquid Iron Bottle",
 
   "block.metal_expansion.osmium_ore": "Osmium Ore",
   "block.metal_expansion.deepslate_osmium_ore": "Deepslate Osmium Ore",
   "block.metal_expansion.osmium_block": "Block of Osmium",
   "block.metal_expansion.silver_ore": "Silver Ore",
   "block.metal_expansion.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.metal_expansion.nether_silver_ore": "Nether Silver Ore",
   "block.metal_expansion.silver_block": "Block of Silver",
 
   "item.metal_expansion.osmium_axe": "Osmium Axe",
   "item.metal_expansion.osmium_pickaxe": "Osmium Pickaxe",
   "item.metal_expansion.osmium_shovel": "Osmium Shovel",
   "item.metal_expansion.osmium_hoe": "Osmium Hoe",
+  "item.metal_expansion.osmium_fishing_rod": "Osmium Fishing Rod",
   "item.metal_expansion.osmium_sword": "Osmium Sword",
   "item.metal_expansion.osmium_spear": "Osmium Spear",
   "item.metal_expansion.osmium_mace": "Osmium Mace",
-  "item.metal_expansion.osmium_fishing_rod": "Osmium Fishing Rod",
   "item.metal_expansion.silver_axe": "Silver Axe",
   "item.metal_expansion.silver_pickaxe": "Silver Pickaxe",
   "item.metal_expansion.silver_shovel": "Silver Shovel",
   "item.metal_expansion.silver_hoe": "Silver Hoe",
   "item.metal_expansion.silver_sword": "Silver Sword",
   "item.metal_expansion.silver_spear": "Silver Spear",
+
+  "item.metal_expansion.lead_ingot": "Lead Ingot",
+  "item.metal_expansion.raw_lead": "Raw Lead",
+  "item.metal_expansion.lead_shard": "Lead Shard",
+  "item.metal_expansion.lead_nugget": "Lead Nugget",
+  "block.metal_expansion.galena": "Galena",
+  "block.metal_expansion.deepslate_galena": "Deepslate Galena",
+  "block.metal_expansion.end_lead_ore": "End Lead-rich Stone",
+  "block.metal_expansion.lead_block": "Block of Lead",
 
   "block.metal_expansion.hydro_generator": "Hydroelectric Generator",
   "block.metal_expansion.hydro_generator_plus": "Advanced Hydroelectric Generator",

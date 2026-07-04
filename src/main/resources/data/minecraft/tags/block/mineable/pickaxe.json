@@ -5,6 +5,14 @@
     "metal_expansion:deepslate_osmium_ore",
     "metal_expansion:hydro_generator",
     "metal_expansion:hydro_generator_plus",
-    "metal_expansion:hydro_generator_max"
+    "metal_expansion:hydro_generator_max",
+    "metal_expansion:silver_ore",
+    "metal_expansion:silver_block",
+    "metal_expansion:deepslate_silver_ore",
+    "metal_expansion:nether_silver_ore",
+    "metal_expansion:galena",
+    "metal_expansion:lead_block",
+    "metal_expansion:deepslate_galena",
+    "metal_expansion:end_lead_ore"
   ]
 }

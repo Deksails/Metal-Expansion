@@ -19,7 +19,7 @@ public class ModToolMaterials {
             4.0f,
             2f,
             20,
-            ModTags.Items.OSMIUM_INGOTS
+            ModTags.Items.SILVER_INGOTS
     );
 }
 

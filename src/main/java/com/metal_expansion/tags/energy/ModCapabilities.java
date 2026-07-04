@@ -1,6 +1,7 @@
 package com.metal_expansion.tags.energy;
 
 import com.metal_expansion.tags.energy.LeadAcidBattery.LeadAcidBatteryEnergyStorage;
+import com.metal_expansion.tags.energy.LeadAcidBatteryUnit.LeadAcidBatteryUnitEnergyStorage;
 import com.metal_expansion.tags.registry.ModBlockEntities;
 import com.metal_expansion.tags.registry.ModItems;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -24,7 +25,7 @@ public final class ModCapabilities {
         );
         event.registerItem(
                 Capabilities.Energy.ITEM,
-                (stack, itemAccess) -> new LeadAcidBatteryEnergyStorage(itemAccess),
+                (stack, itemAccess) -> new LeadAcidBatteryUnitEnergyStorage(itemAccess),
                 ModItems.LEAD_ACID_BATTERY_UNIT.get()
         );
     }

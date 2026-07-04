@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "metal_expansion:osmium_shovel"
+    "metal_expansion:osmium_shovel",
+    "metal_expansion:silver_shovel"
   ]
 }

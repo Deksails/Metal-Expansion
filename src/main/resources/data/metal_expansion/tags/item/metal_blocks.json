@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "metal_expansion:osmium_block"
+    "metal_expansion:osmium_block",
+    "metal_expansion:silver_block",
+    "metal_expansion:lead_block"
   ]
 }

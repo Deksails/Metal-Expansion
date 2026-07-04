@@ -9,10 +9,11 @@ import net.minecraft.world.item.Item;
 public class ModTags {
     public static class Items {
         public static final TagKey<Item> OSMIUM_INGOTS =
-                TagKey.create(
-                        Registries.ITEM,
-                        Identifier.fromNamespaceAndPath("c", "ingots/osmium")
-                );
+                TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "ingots/osmium"));
+        public static final TagKey<Item> SILVER_INGOTS =
+                TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "ingots/silver"));
+        public static final TagKey<Item> LEAD_INGOTS =
+                TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "ingots/lead"));
 
         public static final TagKey<Item> MACHINES =
                 TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MetalExpansion.MODID, "machines"));
