@@ -39,3 +39,6 @@ createJar.bat
 *.tmp
 *.bak
 *.swp
+
+# Back
+Back.png

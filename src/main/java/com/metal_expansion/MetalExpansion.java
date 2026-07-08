@@ -1,6 +1,7 @@
 package com.metal_expansion;
 
 import com.metal_expansion.tags.energy.ModCapabilities;
+import com.metal_expansion.tags.event.AlkaliMetalReactionEvents;
 import com.metal_expansion.tags.event.ModCombatEvents;
 import com.metal_expansion.tags.menu.ModMenuTypes;
 import com.metal_expansion.tags.registry.ModBlockEntities;
@@ -31,6 +32,7 @@ public class MetalExpansion {
         ModMenuTypes.MENUS.register(modEventBus);
 
         NeoForge.EVENT_BUS.addListener(ModCombatEvents::onLivingDamage);
+        NeoForge.EVENT_BUS.addListener(AlkaliMetalReactionEvents::onEntityTick);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

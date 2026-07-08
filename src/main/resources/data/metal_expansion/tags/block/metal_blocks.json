@@ -11,6 +11,24 @@
     "metal_expansion:lead_block",
     "metal_expansion:galena",
     "metal_expansion:deepslate_galena",
-    "metal_expansion:end_lead_ore"
+    "metal_expansion:end_lead_ore",
+    "metal_expansion:spodumene_ore",
+    "metal_expansion:deepslate_spodumene_ore",
+    "metal_expansion:lithium_block",
+    "metal_expansion:lithium_oxide_block",
+    "metal_expansion:cassiterite_ore",
+    "metal_expansion:deepslate_cassiterite_ore",
+    "metal_expansion:tin_block",
+    "metal_expansion:rutile_ore",
+    "metal_expansion:deepslate_rutile_ore",
+    "metal_expansion:titanium_block",
+    "metal_expansion:vanadium_block",
+    "metal_expansion:vanadium_titanomagnetite_ore",
+    "metal_expansion:deepslate_vanadium_titanomagnetite_ore",
+    "metal_expansion:ilmenite_ore",
+    "metal_expansion:deepslate_ilmenite_ore",
+    "metal_expansion:lepidolite_ore",
+    "metal_expansion:deepslate_lepidolite_ore",
+    "metal_expansion:deposited_salt_block"
   ]
 }

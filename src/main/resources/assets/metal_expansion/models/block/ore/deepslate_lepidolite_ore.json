@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "metal_expansion:block/ore/deepslate_lepidolite_ore"
+  }
+}

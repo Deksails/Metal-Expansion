@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "metal_expansion:block/metal_block/lithium_oxide_block"
+    }
+  }
+}

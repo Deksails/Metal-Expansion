@@ -3,6 +3,11 @@
   "values": [
     "metal_expansion:osmium_block",
     "metal_expansion:silver_block",
-    "metal_expansion:lead_block"
+    "metal_expansion:lead_block",
+    "metal_expansion:lithium_block",
+    "metal_expansion:lithium_oxide_block",
+    "metal_expansion:tin_block",
+    "metal_expansion:titanium_block",
+    "metal_expansion:vanadium_block"
   ]
 }

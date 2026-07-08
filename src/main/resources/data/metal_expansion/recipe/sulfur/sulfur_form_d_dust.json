@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "SS ",
+    "SS ",
+    "   "
+  ],
+  "key": {
+    "S": "metal_expansion:dirty_sulfur_dust"
+  },
+  "result": {
+    "id": "minecraft:sulfur",
+    "count": 1
+  }
+}

@@ -5,6 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Items {
@@ -27,5 +28,29 @@ public class ModTags {
                 TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MetalExpansion.MODID, "materials"));
         public static final TagKey<Item> METAL_BLOCKS =
                 TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MetalExpansion.MODID, "metal_blocks"));
+
+
+        public static final TagKey<Item> EXPLODES_IN_WATER =
+                itemTag("explodes_in_water");
+
+        public static final TagKey<Item> DISAPPEARS_IN_WATER =
+                itemTag("disappears_in_water");
+
+        private static TagKey<Item> itemTag(String name) {
+            return TagKey.create(
+                    Registries.ITEM,
+                    Identifier.fromNamespaceAndPath(MetalExpansion.MODID, name)
+            );
+        }
+    }
+    public static final class Blocks {
+        public static final TagKey<Block> EXPLODES_IN_WATER =
+                blockTag("explodes_in_water");
+        private static TagKey<Block> blockTag(String name) {
+            return TagKey.create(
+                        Registries.BLOCK,
+                        Identifier.fromNamespaceAndPath(MetalExpansion.MODID, name)
+            );
+        }
     }
 }

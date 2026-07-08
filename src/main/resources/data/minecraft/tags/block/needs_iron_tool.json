@@ -5,6 +5,14 @@
     "metal_expansion:deepslate_osmium_ore",
     "metal_expansion:hydro_generator",
     "metal_expansion:hydro_generator_plus",
-    "metal_expansion:hydro_generator_max"
+    "metal_expansion:hydro_generator_max",
+    "metal_expansion:rutile_ore",
+    "metal_expansion:deepslate_rutile_ore",
+    "metal_expansion:titanium_block",
+    "metal_expansion:vanadium_block",
+    "metal_expansion:vanadium_titanomagnetite_ore",
+    "metal_expansion:deepslate_vanadium_titanomagnetite_ore",
+    "metal_expansion:ilmenite_ore",
+    "metal_expansion:deepslate_ilmenite_ore"
   ]
 }

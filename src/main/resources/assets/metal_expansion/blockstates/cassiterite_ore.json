@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "metal_expansion:block/ore/cassiterite_ore"
+    }
+  }
+}
