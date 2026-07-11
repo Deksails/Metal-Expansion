@@ -28,7 +28,6 @@ public class HydroGeneratorItemHandler extends ItemStackResourceHandler {
 
     @Override
     protected int getCapacity(ItemResource resource) {
-        // 这个机器内部只有 1 个槽位，而且最多存 1 个物品
         return 1;
     }
 

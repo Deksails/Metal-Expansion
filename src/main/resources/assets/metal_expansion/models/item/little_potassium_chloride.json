@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "metal_expansion:item/tab_miscellaneous/salt/little_potassium_chloride"
+    "layer0": "metal_expansion:item/tab_miscellaneous/others/little_potassium_chloride"
   }
 }

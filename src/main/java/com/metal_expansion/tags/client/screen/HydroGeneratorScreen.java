@@ -2,12 +2,16 @@ package com.metal_expansion.tags.client.screen;
 
 import com.metal_expansion.MetalExpansion;
 import com.metal_expansion.tags.menu.HydroGeneratorMenu;
+import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.ContainerInput;
+import net.minecraft.world.inventory.Slot;
+import org.lwjgl.glfw.GLFW;
 
 public class HydroGeneratorScreen extends AbstractContainerScreen<HydroGeneratorMenu> {
     private static final Identifier TEXTURE =
@@ -20,6 +24,31 @@ public class HydroGeneratorScreen extends AbstractContainerScreen<HydroGenerator
     @Override
     protected void init() {
         super.init();
+    }
+
+    @Override
+    public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
+        if (event.button() == GLFW.GLFW_MOUSE_BUTTON_LEFT && event.hasShiftDown()) {
+            Slot sourceSlot = this.findHoveredSlot(event.x(), event.y());
+            if (sourceSlot != null && sourceSlot.hasItem()) {
+                int sourceSlotId = this.menu.slots.indexOf(sourceSlot);
+                this.slotClicked(sourceSlot, sourceSlotId, event.button(), ContainerInput.PICKUP_ALL);
+                return true;
+            }
+        }
+
+        return super.mouseClicked(event, doubleClick);
+    }
+
+    private Slot findHoveredSlot(double mouseX, double mouseY) {
+        for (int slotId = 0; slotId < this.menu.slots.size(); slotId++) {
+            Slot slot = this.menu.slots.get(slotId);
+            if (this.isHovering(slot.x, slot.y, 16, 16, mouseX, mouseY)) {
+                return slot;
+            }
+        }
+
+        return null;
     }
 
     @Override

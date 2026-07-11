@@ -43,7 +43,7 @@ public final class AlkaliMetalReactionEvents {
     }
 
     private static void explodeDroppedItem(ServerLevel level, ItemEntity itemEntity, ItemStack stack) {
-        float power = 2.0F;
+        float power = 3.0F;
 
         if (stack.is(ModItems.LITHIUM_OXIDE_BLOCK.get())) {
             power = 1.5F;

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "metal_expansion:item/tab_miscellaneous/magnesium/magnesium_dust"
+    "layer0": "metal_expansion:item/tab_miscellaneous/others/magnesium_dust"
   }
 }

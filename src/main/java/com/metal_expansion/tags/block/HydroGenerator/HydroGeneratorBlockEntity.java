@@ -1,6 +1,5 @@
 package com.metal_expansion.tags.block.HydroGenerator;
 
-import com.metal_expansion.tags.energy.LeadAcidBattery.LeadAcidBattery;
 import com.metal_expansion.tags.registry.ModBlockEntities;
 import com.mojang.serialization.Codec;
 import java.util.ArrayDeque;
@@ -24,6 +23,10 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.neoforge.transfer.access.ItemAccess;
+import net.neoforged.neoforge.transfer.energy.EnergyHandler;
+import net.neoforged.neoforge.transfer.transaction.Transaction;
 import org.jetbrains.annotations.Nullable;
 import com.metal_expansion.tags.menu.HydroGeneratorMenu;
 
@@ -62,10 +65,18 @@ public class HydroGeneratorBlockEntity extends BlockEntity implements MenuProvid
             return;
         }
 
-        int energy = LeadAcidBattery.get(entity.storedItem);
-        int toInsert = Math.min(LeadAcidBattery.MAX - energy, entity.cachedGeneratedPerTick);
-        if (toInsert > 0) {
-            LeadAcidBattery.set(entity.storedItem, energy + toInsert);
+        EnergyHandler energyHandler = getEnergyHandler(entity.storedItem);
+        if (energyHandler == null) {
+            return;
+        }
+
+        try (Transaction transaction = Transaction.openRoot()) {
+            int inserted = energyHandler.insert(entity.cachedGeneratedPerTick, transaction);
+            if (inserted <= 0) {
+                return;
+            }
+
+            transaction.commit();
             entity.setChanged();
             level.sendBlockUpdated(pos, state, state, 3);
         }
@@ -270,10 +281,21 @@ public class HydroGeneratorBlockEntity extends BlockEntity implements MenuProvid
         }
     }
     public int getStoredItemEnergy() {
-        return this.storedItem.isEmpty() ? 0 : LeadAcidBattery.get(this.storedItem);
+        EnergyHandler energyHandler = getEnergyHandler(this.storedItem);
+        return energyHandler == null ? 0 : clampToInt(energyHandler.getAmountAsLong());
     }
 
     public int getStoredItemEnergyCapacity() {
-        return this.storedItem.isEmpty() ? 0 : LeadAcidBattery.MAX;
+        EnergyHandler energyHandler = getEnergyHandler(this.storedItem);
+        return energyHandler == null ? 0 : clampToInt(energyHandler.getCapacityAsLong());
+    }
+
+    @Nullable
+    private static EnergyHandler getEnergyHandler(ItemStack stack) {
+        return stack.isEmpty() ? null : ItemAccess.forStack(stack).getCapability(Capabilities.Energy.ITEM);
+    }
+
+    private static int clampToInt(long value) {
+        return (int) Math.clamp(value, 0L, Integer.MAX_VALUE);
     }
 }

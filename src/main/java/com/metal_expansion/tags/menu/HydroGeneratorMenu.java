@@ -5,12 +5,16 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerInput;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 
 public class HydroGeneratorMenu extends AbstractContainerMenu {
+    private static final int GENERATOR_SLOT = 0;
+    private static final int FIRST_PLAYER_SLOT = 1;
+    private static final int SHIFT_LEFT_CLICK_BUTTON = 0;
     private final HydroGeneratorBlockEntity blockEntity;
     private final ContainerData data;
 
@@ -18,7 +22,7 @@ public class HydroGeneratorMenu extends AbstractContainerMenu {
     public HydroGeneratorMenu(int containerId, Inventory playerInventory, HydroGeneratorBlockEntity blockEntity) {
         super(ModMenuTypes.HYDRO_GENERATOR.get(), containerId);
         this.blockEntity = blockEntity;
-        this.addSlot(new Slot(blockEntity, 0, 26, 35));
+        this.addSlot(new Slot(blockEntity, GENERATOR_SLOT, 26, 35));
 
         this.data = new ContainerData() {
             @Override
@@ -57,7 +61,7 @@ public class HydroGeneratorMenu extends AbstractContainerMenu {
         this.blockEntity = null;
         this.data = new SimpleContainerData(4);
 
-        this.addSlot(new Slot(new net.minecraft.world.SimpleContainer(1), 0, 26, 35));
+        this.addSlot(new Slot(new net.minecraft.world.SimpleContainer(1), GENERATOR_SLOT, 26, 35));
 
         this.addDataSlots(this.data);
         addPlayerInventory(playerInventory);
@@ -83,6 +87,89 @@ public class HydroGeneratorMenu extends AbstractContainerMenu {
     @Override
     public ItemStack quickMoveStack(Player player, int index) {
         return ItemStack.EMPTY;
+    }
+
+    @Override
+    public void clicked(int slotId, int button, ContainerInput input, Player player) {
+        if (input == ContainerInput.PICKUP_ALL && button == SHIFT_LEFT_CLICK_BUTTON) {
+            if (slotId == GENERATOR_SLOT) {
+                this.moveOneItemToPlayerInventory();
+            } else if (slotId >= FIRST_PLAYER_SLOT) {
+                this.moveOneItemToGenerator(slotId);
+            }
+            return;
+        }
+
+        super.clicked(slotId, button, input, player);
+    }
+
+    private void moveOneItemToGenerator(int sourceSlotId) {
+        if (!this.isValidSlotIndex(sourceSlotId)) {
+            return;
+        }
+
+        Slot generatorSlot = this.getSlot(GENERATOR_SLOT);
+        Slot sourceSlot = this.getSlot(sourceSlotId);
+        ItemStack sourceStack = sourceSlot.getItem();
+
+        if (generatorSlot.hasItem() || sourceStack.isEmpty()) {
+            return;
+        }
+
+        ItemStack oneItem = sourceStack.copyWithCount(1);
+        if (!generatorSlot.mayPlace(oneItem)) {
+            return;
+        }
+
+        sourceSlot.remove(1);
+        sourceSlot.setChanged();
+        generatorSlot.set(oneItem);
+        generatorSlot.setChanged();
+        this.broadcastChanges();
+    }
+
+    private void moveOneItemToPlayerInventory() {
+        Slot generatorSlot = this.getSlot(GENERATOR_SLOT);
+        ItemStack generatorStack = generatorSlot.getItem();
+
+        if (generatorStack.isEmpty()) {
+            return;
+        }
+
+        ItemStack oneItem = generatorStack.copyWithCount(1);
+        if (!this.insertOneItemIntoPlayerInventory(oneItem)) {
+            return;
+        }
+
+        generatorSlot.remove(1);
+        generatorSlot.setChanged();
+        this.broadcastChanges();
+    }
+
+    private boolean insertOneItemIntoPlayerInventory(ItemStack oneItem) {
+        for (int slotId = FIRST_PLAYER_SLOT; slotId < this.slots.size(); slotId++) {
+            Slot targetSlot = this.getSlot(slotId);
+            ItemStack targetStack = targetSlot.getItem();
+
+            if (targetSlot.mayPlace(oneItem)
+                    && ItemStack.isSameItemSameComponents(targetStack, oneItem)
+                    && targetStack.getCount() < targetSlot.getMaxStackSize(oneItem)) {
+                targetStack.grow(1);
+                targetSlot.setChanged();
+                return true;
+            }
+        }
+
+        for (int slotId = FIRST_PLAYER_SLOT; slotId < this.slots.size(); slotId++) {
+            Slot targetSlot = this.getSlot(slotId);
+            if (targetSlot.getItem().isEmpty() && targetSlot.mayPlace(oneItem)) {
+                targetSlot.set(oneItem);
+                targetSlot.setChanged();
+                return true;
+            }
+        }
+
+        return false;
     }
 
     @Override

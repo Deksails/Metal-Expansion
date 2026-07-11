@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "metal_expansion:item/tab_miscellaneous/salt/sodium_chloride_powder"
+    "layer0": "metal_expansion:item/tab_miscellaneous/others/sodium_chloride_powder"
   }
 }

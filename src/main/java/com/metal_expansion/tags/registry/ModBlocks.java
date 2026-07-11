@@ -145,7 +145,7 @@ public class ModBlocks {
             BLOCKS.registerBlock("lithium_block",
                     props -> new AlkaliMetalReactiveBlock(
                             props.strength(5.0F, 6.0F).randomTicks(),
-                            2.0F,
+                            3.0F,
                             () -> ModBlocks.LITHIUM_OXIDE_BLOCK.get(),
                             0.05F
                     ));
@@ -153,7 +153,7 @@ public class ModBlocks {
             BLOCKS.registerBlock("lithium_oxide_block",
                     props -> new AlkaliMetalReactiveBlock(
                             props.strength(5.0F, 6.0F),
-                            1.0F
+                            1.5F
                     ));
 
     //Tin

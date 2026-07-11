@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "metal_expansion:item/tab_miscellaneous/sulfur/dirty_sulfur_dust"
+    "layer0": "metal_expansion:item/tab_miscellaneous/others/dirty_sulfur_dust"
   }
 }
