@@ -23,18 +23,12 @@ public class HydroGeneratorItemHandler extends ItemStackResourceHandler {
 
     @Override
     protected boolean isValid(ItemResource resource) {
-        // 第一版：允许任何非空物品进入机器
-        // 这样 Jade、管道、漏斗类测试会最直观。
         return !resource.isEmpty();
-
-        // 如果你只想允许铅酸蓄电池，可以改成：
-        // return !resource.isEmpty()
-        //        && resource.is(ModItems.LEAD_ACID_BATTERY.get());
     }
 
     @Override
     protected int getCapacity(ItemResource resource) {
-        // 这个机器内部只有 1 个槽位，而且最多存 1 个物品。
+        // 这个机器内部只有 1 个槽位，而且最多存 1 个物品
         return 1;
     }
 
